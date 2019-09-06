@@ -81,7 +81,8 @@ implementation 'com.lywj.sdk.android:lywj-sdk:1.0.0'
  ```       
 ## 冲突
 如果有 `com.android.support` 冲突提示的话，可以使用以下方法 拷贝至 应用工程下的 `build.gradle` 文件中来统一使用相同版本 
-```configurations.all {
+```
+configurations.all {
     resolutionStrategy.eachDependency { DependencyResolveDetails details ->
         def requested = details.requested
         if (requested.group == 'com.android.support') {
