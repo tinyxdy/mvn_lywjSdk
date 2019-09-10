@@ -2,8 +2,8 @@
 ## 介绍
 链游玩家SDK提供登录注册，以及支付功能。
 ## 用法
-使用 Gradle 安装
-我们的aar包目前托管在阿里云私人仓库，你需要将以下代码添加到工程的 `build.gradle` 中。
+使用 Gradle 下载
+我们的aar包 目前托管在阿里云私人仓库，你需要将以下代码添加到工程的 `build.gradle` 中。
 ```
 allprojects {
     repositories {
