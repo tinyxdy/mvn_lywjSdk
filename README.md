@@ -49,7 +49,7 @@ implementation 'com.lywj.sdk.android:lywj-sdk:1.0.0'
 ##### 事件回调 
 监听登录和登出事件的回调方法 登录成功会返回 `UserInfo` 失败返回错误原因
  ```
-   LywjSdkManger.getInstance().registerLoginEvent(this, new LywjSdkManger.OnLoginListener() {
+ LywjSdkManger.getInstance().registerLoginEvent(this, new LywjSdkManger.OnLoginListener() {
             @Override
             public void onLoginSuccess(UserInfo userInfo) {
 
@@ -67,7 +67,8 @@ implementation 'com.lywj.sdk.android:lywj-sdk:1.0.0'
         });
  ```
  监听支付结果的回调
-```LywjSdkManger.getInstance().registerPayEvent(this, new LywjSdkManger.OnPayListener() {
+ ```
+ LywjSdkManger.getInstance().registerPayEvent(this, new LywjSdkManger.OnPayListener() {
             @Override
             public void onPaySuccess(OrderDetail orderDetail) {
 
