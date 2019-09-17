@@ -42,9 +42,9 @@ implementation 'com.lywj.sdk.android:lywj-sdk:1.0.0'
    LywjSdkManger.getInstance().loginOut();
 ```
 ##### 支付
-支付需传商品价格 和 商品描述
+支付需传商品价格、商品描述和用户唯一标识
 ```
- LywjSdkManger.getInstance().starPay(this, 商品价格, 商品描述);
+ LywjSdkManger.getInstance().starPay(this, 商品价格, 商品描述,用户唯一标识);
  ```
 ##### 事件回调 
 监听登录和登出事件的回调方法 登录成功会返回 `UserInfo` 失败返回错误原因
