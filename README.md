@@ -19,13 +19,13 @@ allprojects {
 ```
 然后，在应用 build.gradle 中添加依赖。
 ```
-implementation 'com.lywj.sdk.android:lywj-sdk:1.0.1-beta'
+implementation 'com.lywj.sdk.android:lywj-sdk:1.0.3-beta'
  ```
  
 ## 混淆规则
 混淆配置已经在链游玩家的aar包里生成了
 ## 代码使用
-初始化SDK 在应用的 `Application` `onCreate` 方法中 初始化下方代码 `init` 方法第一参数是 `Application` 参数二是链游玩家平台分配的 `appid` 参数三是链游玩家平台分配的 `secret`，
+初始化SDK 在应用的 `Application` `onCreate` 方法中 初始化下方代码 `init` 方法第一参数是 `Application` 参数二是链游玩家平台分配的 `appid` 参数三是链游玩家平台分配的 `appkey`，
 `setDebug` 方法开启sdk debug 和 release模式
 ```
   LywjSdkManger.getInstance().init(this, "xxx", "xxx");
