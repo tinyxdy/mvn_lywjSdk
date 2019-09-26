@@ -38,7 +38,7 @@ implementation 'com.lywj.sdk.android:lywj-sdk:1.0.4-beta'
  LywjSdkManger.getInstance().starRegister(this);
  ```
 ##### 初次注册或登录
-如不需调用登陆接口直接登陆的情况下需调用此接口验证账号，游戏方根据返回的user_id获取该用户的游戏信息，返回信息中user_id为空的情况下需要调用绑定游戏方userid接口绑定双方关系
+注册后和登陆成功后返回的信息里user_id为空的情况下需要调用此方法来绑定游戏方跟链游玩家的账号
 ```
  LywjSdkManger.getInstance().bindUserId("游戏方用户ID", new OnBindUserIdCallback() {
             @Override
@@ -52,7 +52,21 @@ implementation 'com.lywj.sdk.android:lywj-sdk:1.0.4-beta'
             }
         });
 ```
- 
+##### 初次注册或登录
+如不需调用登陆接口直接登陆的情况下需调用此接口验证账号，游戏方根据返回的user_id获取该用户的游戏信息，返回信息中user_id为空的情况下需要调用绑定游戏方userid接口绑定双方关系
+ ```
+   LywjSdkManger.getInstance().autoLoginVerify(new OnAutoLoginVerifyCallback() {
+            @Override
+            public void onVerifySuccess(UserInfo userInfo) {
+
+            }
+
+            @Override
+            public void onVerifyFailed(int code, String message) {
+                //账号被封
+            }
+        });
+ ```
 ##### 退出登录 
 ```
  LywjSdkManger.getInstance().loginOut();
