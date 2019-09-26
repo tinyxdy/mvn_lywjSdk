@@ -19,7 +19,7 @@ allprojects {
 ```
 然后，在应用 build.gradle 中添加依赖。
 ```
-implementation 'com.lywj.sdk.android:lywj-sdk:1.0.3-beta'
+implementation 'com.lywj.sdk.android:lywj-sdk:1.0.4-beta'
  ```
  
 ## 混淆规则
@@ -121,9 +121,8 @@ implementation 'com.lywj.sdk.android:lywj-sdk:1.0.3-beta'
 在应用的 `Application` `onCreate` 方法中 初始化下方代码，`setFloatingClass` 可以传多个需要展示悬浮框的`class`，`class`必须继承为实现了 `Lifecycle` 功能的父类，如 `FragmentActivity` ，`AppCompatActivity`
 ```
  LywjSdkManger.getInstance().setFloatingClass(MainActivity.class);
-   
 ```
-可以通过以下方法来显示和隐藏展示悬浮框
+可以通过以下方法来显示和隐藏悬浮框
 ```
  LywjSdkManger.getInstance().openFloatingWindow();
  LywjSdkManger.getInstance().closeFloatingWindow();
