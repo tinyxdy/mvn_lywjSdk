@@ -63,7 +63,7 @@ implementation 'com.lywj.sdk.android:lywj-sdk:1.0.4-beta'
 
             @Override
             public void onVerifyFailed(int code, String message) {
-                //账号被封
+                //如code=202代表账号被封
             }
         });
  ```
