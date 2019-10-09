@@ -74,7 +74,7 @@ implementation 'com.lywj.sdk.android:lywj-sdk:1.0.4-beta'
 ##### 支付
 支付需传商品价格、商品描述和用户唯一标识
 ```
- LywjSdkManger.getInstance().starPay(this, 商品价格, 商品描述,用户唯一标识);
+ LywjSdkManger.getInstance().starPay(this, 商品价格, 商品描述,用户唯一标识,额外信息);
  ```
 ##### 事件回调 
 监听注册事件的回调方法 注册成功会返回 `UserInfo` 失败返回错误原因
