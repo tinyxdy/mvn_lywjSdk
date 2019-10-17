@@ -52,7 +52,7 @@ implementation 'com.lywj.sdk.android:lywj-sdk:1.0.6-beta'
             }
         });
 ```
-##### 初次注册或登录
+##### 自动登录
 如不需调用登陆接口直接登陆的情况下需调用此接口验证账号，游戏方根据返回的user_id获取该用户的游戏信息，返回信息中user_id为空的情况下需要调用绑定游戏方userid接口绑定双方关系
  ```
    LywjSdkManger.getInstance().autoLoginVerify(new OnAutoLoginVerifyCallback() {
