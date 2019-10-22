@@ -38,7 +38,7 @@ implementation 'com.lywj.sdk.android:lywj-sdk:1.0.6-beta'
  LywjSdkManger.getInstance().starRegister(this);
  ```
 ##### 初次注册或登录
-注册后和登陆成功后返回的信息里user_id为空的情况下需要调用此方法来绑定游戏方跟链游玩家的账号
+注册后和登陆成功后返回的信息里user_id为空的情况下需要调用此方法来绑定游戏方跟链游玩家的账号，可以结合登录监听在 `onFirstLoginSuccess` 里添加以下代码
 ```
  LywjSdkManger.getInstance().bindUserId("游戏方用户ID", new OnBindUserIdCallback() {
             @Override
