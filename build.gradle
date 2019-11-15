@@ -25,7 +25,6 @@ allprojects {
             }
             url 'https://repo.rdc.aliyun.com/repository/104143-release-OqJNQ8'
         }
-//        maven { url "D:\\studioProjects\\sample\\LywjSDK\\maven\\lib\\mvn_lywjSdk" }
     }
 }
 
