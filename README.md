@@ -19,7 +19,7 @@ allprojects {
 ```
 然后，在应用 build.gradle 中添加依赖。
 ```
-implementation 'com.lywj.sdk.android:lywj-sdk:1.1.1'
+implementation 'com.lywj.sdk.android:lywj-sdk:1.1.2'
  ```
  
 ## 混淆规则
