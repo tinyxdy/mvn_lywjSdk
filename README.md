@@ -19,7 +19,7 @@ allprojects {
 ```
 然后，在应用 build.gradle 中添加依赖。
 ```
-implementation 'com.lywj.sdk.android:lywj-sdk:1.1.2'
+implementation 'com.lywj.sdk.android:lywj-sdk:1.1.3'
  ```
  
 ## 混淆规则
@@ -132,25 +132,4 @@ implementation 'com.lywj.sdk.android:lywj-sdk:1.1.2'
 ## 悬浮框功能
 悬浮框提供链游玩家的钱包、礼包、代金券、消息等功能
 ### 悬浮框使用方法
-在应用的 `Application` `onCreate` 方法中 初始化下方代码，`setFloatingClass` 可以传多个需要展示悬浮框的`class`，`class`必须继承为实现了 `Lifecycle` 功能的父类，如 `FragmentActivity` ，`AppCompatActivity`
-```
- LywjSdkManger.getInstance().setFloatingClass(MainActivity.class);
-```
-可以通过以下方法来显示和隐藏悬浮框
-```
- LywjSdkManger.getInstance().openFloatingWindow();
- LywjSdkManger.getInstance().closeFloatingWindow();
-```
-## 冲突
-如果有 `com.android.support` 冲突提示的话，可以使用以下方法 拷贝至 应用工程下的 `build.gradle` 文件中来统一使用相同版本 
-```
-configurations.all {
-    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
-        def requested = details.requested
-        if (requested.group == 'com.android.support') {
-            if (!requested.name.startsWith("multidex")) {
-                details.useVersion '28.0.0'
-            }
-        }
-    }
-```
+在应用的 `Application` `onCreate` 方法中 初始化下方代码，`setFloatingClass` 可以传多个需要展示悬浮框的`class`，`class`必须继承为实
