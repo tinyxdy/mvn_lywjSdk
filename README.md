@@ -132,4 +132,4 @@ implementation 'com.lywj.sdk.android:lywj-sdk:1.1.3'
 ## 悬浮框功能
 悬浮框提供链游玩家的钱包、礼包、代金券、消息等功能
 ### 悬浮框使用方法
-在应用的 `Application` `onCreate` 方法中 初始化下方代码，`setFloatingClass` 可以传多个需要展示悬浮框的`class`，`class`必须继承为实`FragmentActivity`
+在应用的 `Application` `onCreate` 方法中 初始化下方代码，`setFloatingClass` 可以传多个需要展示悬浮框的`class`，`class`必须继承为`FragmentActivity`
